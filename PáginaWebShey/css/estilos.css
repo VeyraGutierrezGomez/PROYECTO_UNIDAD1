@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+    text-decoration: none;
+
+}
+
+.title{
+    width: 100%;
+    height: 80px;
+    background: #65a295;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/*BARRA MENU*/
+.container__menu1 {
+    width: 100%;
+    height: 60px;
+    background: #65a295;
+    padding: 0px 20px;
+    z-index: 1;
+    position: fixed;
+    top:80px; /* Mantener la posición original */
+}
+
+.menu1 {
+    max-width: 1200px;
+    margin: auto; /* Centrar horizontalmente el contenedor */
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centrar los elementos del menú horizontalmente */
+    align-items: center; /* Centrar los elementos del menú verticalmente */
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center; /* Asegura que el ul esté centrado horizontalmente */
+    height: 100%;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    display: flex;
+    align-items: center; /* Centra el contenido del enlace verticalmente */
+    justify-content: center; /* Centra el contenido del enlace horizontalmente */
+    padding: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li:first-child > a{
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 20px;
+}
+
+nav > ul > li:first-child:hover > a{
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #6ecabc;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*ARTICULO*/
+
+main{
+    background: #c9e4e0d0 ;
+    padding: 40px 20px;
+    position: relative;
+    margin-top: 130px;
+    
+}
+.item{
+    scroll-margin-top: 20ex;
+}
+
+#Inicio, h2{
+  text-align: center;
+}
+
+/*--------------------------------------------------*/
+
+.article-titulo {
+    flex: 1; /* El texto ocupa el espacio restante */
+    max-width: 1200px;
+}.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos desde arriba */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 30px;
+    gap: 20px;
+    text-align: justify;
+    position: relative;
+}
+
+.article-text {
+    flex: 1;
+    max-width: 900px;
+}
+
+.article-text h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: center; /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #65a295;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box p a {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box p {
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+.pie-pagina .grupo-2{
+    background-color: #6ecabc;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 12px;
+}
+
+
+
